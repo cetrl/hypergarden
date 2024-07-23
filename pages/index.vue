@@ -11,7 +11,6 @@ definePageMeta({
 
 <template>
   <div>
-    <h1>Hypergarden</h1>
     <SearchBar />
     <ArticleMap />
   </div>

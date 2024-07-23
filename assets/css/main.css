@@ -1,15 +1,23 @@
 .article-preview {
+  font-size: 1.5em;
     position: absolute;
+    max-width: 500px;
     top: 20px;
     right: 20px;
     background: white;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
+    height: 90vh;
+    overflow:scroll;
   }
   
 .article-preview img {
-    max-width: 500px;
     height: auto;
+    width: 100%;
     right: 0;
   }
+
+.summary {
+  font-style: italic;
+}

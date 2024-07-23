@@ -3,7 +3,9 @@
     <div id="article-map"></div>
     <div v-if="selectedArticle" class="article-preview">
       <h3>{{ selectedArticle.title }}</h3>
-      <img v-if="selectedArticle.image" :src="selectedArticle.image" :alt="selectedArticle.title">
+      <img v-if="selectedArticle.image" :src="selectedArticle.image">
+      <p class="summary">{{ selectedArticle.summary }}</p>
+      <p>{{ selectedArticle.content }}</p>
     </div>
   </div>
 </template>
