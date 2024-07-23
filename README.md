@@ -24,9 +24,9 @@ git clone https://github.com/cetrl/hypergarden.git
 cd hypergarden
 npm install
 npm run dev
-
-# To-do
-## Configuration et Structure de Base
+```
+## To-do
+### Configuration et Structure de Base
 
 / Initialiser le projet Nuxt
 / Configurer le projet (nuxt.config.js)
@@ -36,7 +36,7 @@ npm run dev
 / store Pinia pour gérer les données des articles
 / Créer un jeu de données d'articles factices pour le développement
 
-## Développement de la Carte d'Articles
+### Développement de la Carte d'Articles
 
 - Développer la logique de base pour afficher les articles sur la carte
 - Implémenter les contrôles de zoom et de déplacement
@@ -46,7 +46,7 @@ npm run dev
 - Ajouter des animations de transition entre les états de la carte
 - Commencer l'implémentation du design responsive
 
-## Finalisation et Optimisation
+### Finalisation et Optimisation
 
 - Ajouter une fonction de recherche sur la carte
 - Implémenter le filtrage par catégories
@@ -55,11 +55,3 @@ npm run dev
 - Créer une page détaillée pour chaque article
 - Ajouter des métadonnées SEO de base
 - Tester l'ensemble de l'application sur différents appareils
-- Préparer le projet pour le déploiement
-
-## Bonus
-
-- Ajouter un mode sombre
-- Implémenter une fonctionnalité de partage sur les réseaux sociaux
-- Créer une animation d'introduction pour la carte d'articles
-- Ajouter des statistiques de lecture pour chaque article
