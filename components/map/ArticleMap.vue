@@ -1,42 +1,47 @@
-<!-- Test D3 -->
-
 <template>
-    <div ref="mapContainer"></div>
-  </template>
-  
-  <script>
-    import * as d3 from 'd3';
+  <div>
+    <div id="article-map"></div>
+    <div v-if="selectedArticle" class="article-preview">
+      <h3>{{ selectedArticle.title }}</h3>
+      <img v-if="selectedArticle.image" :src="selectedArticle.image" :alt="selectedArticle.title">
+    </div>
+  </div>
+</template>
 
-  export default {
-    props: {
-      articles: Array
+<script>
+import { ref } from 'vue'
+import { useArticlesStore } from '../store/article.js'
+import * as d3 from 'd3'
+
+export default {
+  setup() {
+    const articlesStore = useArticlesStore()
+    const selectedArticle = ref(null)
+    return { articlesStore, selectedArticle }
+  },
+  mounted() {
+    this.createMap()
+  },
+  methods: {
+    createMap() {
+      const svg = d3.select('#article-map')
+        .append('svg')
+        .attr('width', '100%')
+        .attr('height', '600px')
+
+      svg.selectAll('circle')
+        .data(this.articlesStore.articles)
+        .enter()
+        .append('circle')
+        .attr('cx', d => d.coordinates.x)
+        .attr('cy', d => d.coordinates.y)
+        .attr('r', 10)
+        .attr('fill', 'steelblue')
+        .on('click', (event, d) => this.showArticlePreview(d))
     },
-    mounted() {
-      this.createMap()
-    },
-    methods: {
-      createMap() {
-        const width = 800
-        const height = 600
-  
-        const svg = this.$d3.select(this.$refs.mapContainer)
-          .append('svg')
-          .attr('width', width)
-          .attr('height', height)
-  
-        // Créez ici votre visualisation de carte avec D3
-        // Utilisez this.articles pour accéder aux données des articles
-  
-        // Exemple simple : créer un cercle pour chaque article
-        svg.selectAll('circle')
-          .data(this.articles)
-          .enter()
-          .append('circle')
-          .attr('cx', (d, i) => i * 50 + 50)
-          .attr('cy', height / 2)
-          .attr('r', 20)
-          .attr('fill', 'red')
-      }
+    showArticlePreview(article) {
+      this.selectedArticle = article
     }
   }
-  </script>
+}
+</script>

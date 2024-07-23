@@ -9,7 +9,7 @@
         "category": "Psychédélisme pour les nuls",
         "tags": ["rêves bizarres", "Paprika", "pourquoi je ne dors plus"],
         "coordinates": { "x": 100, "y": 150 },
-        "image": "https://example.com/images/giant-chip-chasing-dreamer.gif"
+        "image": "https://www.cccb.org/rcs_gene/Paprika_04h_1000x560.jpg"
       },
       {
         "id": 2,
@@ -20,7 +20,7 @@
         "category": "Guide de survie pour célébrités en herbe",
         "tags": ["comment ne pas finir comme Mima", "miroirs, vos nouveaux ennemis", "pop idol blues"],
         "coordinates": { "x": 250, "y": 200 },
-        "links": ["https://example.com/how-to-not-become-a-jpop-idol"]
+        "links": ["https://www.slashfilm.com/img/gallery/satoshi-kons-perfect-blue-is-the-kind-of-anime-masterpiece-that-reminds-us-of-what-animation-can-be/l-intro-1666842883.jpg"]
       },
       {
         "id": 3,
@@ -31,7 +31,7 @@
         "category": "Conspirations du futur",
         "tags": ["mon oreiller m'espionne", "rêves commandités", "Paprika était un avertissement"],
         "coordinates": { "x": 400, "y": 100 },
-        "image": "https://example.com/images/dream-advertising-nightmare.jpg"
+        "image": "https://static01.nyt.com/images/2007/05/20/arts/kehr_1_600.jpg"
       },
       {
         "id": 4,
@@ -42,7 +42,7 @@
         "category": "Fitness temporel",
         "tags": ["cardio à travers les âges", "le cosplay ultime", "pourquoi courir autant ?"],
         "coordinates": { "x": 150, "y": 300 },
-        "links": ["https://example.com/how-to-run-through-centuries"]
+        "links": ["https://storage.googleapis.com/lu-echo-prod-experiences/wNqoZmove5SG6TRjbN97Kc/millenium-actress-retrospective-satoshi-kon-NSWRE8/share_Millenium-Actress_02_main.jpg"]
       },
       {
         "id": 5,
@@ -53,7 +53,7 @@
         "category": "Guides de survie pour les fêtes",
         "tags": ["Noël version chaos", "famille choisie", "bébé surprise"],
         "coordinates": { "x": 300, "y": 250 },
-        "image": "https://example.com/images/tokyo-godfathers-christmas-chaos.jpg"
+        "image": "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1578607192963-55ZJCNI8F56NW4AA68A4/image-asset.jpeg"
       }
     ]
   }

@@ -1,0 +1,15 @@
+.article-preview {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+.article-preview img {
+    max-width: 500px;
+    height: auto;
+    right: 0;
+  }
