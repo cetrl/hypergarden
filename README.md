@@ -14,8 +14,8 @@ Hypergarden is a blog platform built with Nuxt.js, offering a browsing experienc
 
 - Nuxt.js
 - Vue.js
-- D3.js (for visualization)
-? Vuex (state management)
+- D3.js -> https://d3js.org/getting-started
+- Pinia -> https://pinia.vuejs.org/
 
 ## Installation
 
@@ -31,9 +31,9 @@ npm run dev
 / Initialiser le projet Nuxt
 / Configurer le projet (nuxt.config.js)
 / Structure des dossiers
-- Installer et configurer D3.js
+/ Installer et configurer D3.js
 / Créer le composant ArticleMap.vue de base
-- Implémenter un store Vuex pour gérer les données des articles
+/ store Pinia pour gérer les données des articles
 - Créer un jeu de données d'articles factices pour le développement
 
 ## J-2 : Développement de la Carte d'Articles
