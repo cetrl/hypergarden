@@ -3,8 +3,7 @@
     <div>
       <h1>Hypergarden</h1>
       <nav>
-        <button>Home</button>
-        <button>About</button>
+        <button><NuxtLink to="about">About</NuxtLink></button>
         <button><NuxtLink to="login">Login</NuxtLink></button>
       </nav>
     </div>

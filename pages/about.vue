@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 definePageMeta({
   layout: "default",
 });
@@ -7,7 +9,6 @@ definePageMeta({
 <template>
   <div>
     <h1>About</h1>
-
     <div>
       <p>
         Hypergarden is a blog platform built with Nuxt.js, offering a browsing

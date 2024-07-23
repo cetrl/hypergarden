@@ -31,8 +31,8 @@ npm run dev
 / Initialiser le projet Nuxt
 / Configurer le projet (nuxt.config.js)
 / Structure des dossiers
-- Installer et configurer D3.js ou une autre bibliothèque de visualisation
-- Créer le composant ArticleMap.vue de base
+- Installer et configurer D3.js
+/ Créer le composant ArticleMap.vue de base
 - Implémenter un store Vuex pour gérer les données des articles
 - Créer un jeu de données d'articles factices pour le développement
 

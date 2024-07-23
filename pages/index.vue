@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import ArticleMap from '~/components/map/ArticleMap.vue'
+
 definePageMeta({
   layout: "default",
 });
@@ -6,13 +9,7 @@ definePageMeta({
 
 <template>
   <div>
-    <h2>Landing page</h2>
-
-    <div>
-      <template>
-        <h3>Parcourir</h3>
-      </template>
-      <p>Here's some amazing content that you don't want to miss!</p>
-    </div>
+    <h1>Hypergarden</h1>
+    <ArticleMap />
   </div>
 </template>
