@@ -28,13 +28,13 @@ npm run dev
 ## To-do
 ### Configuration et Structure de Base
 
-/ Initialiser le projet Nuxt
-/ Configurer le projet (nuxt.config.js)
-/ Structure des dossiers
-/ Installer et configurer D3.js
-/ Créer le composant ArticleMap.vue de base
-/ store Pinia pour gérer les données des articles
-/ Créer un jeu de données d'articles factices pour le développement
+- / Initialiser le projet Nuxt
+- / Configurer le projet (nuxt.config.js)
+- / Structure des dossiers
+- / Installer et configurer D3.js
+- / Créer le composant ArticleMap.vue de base
+- / store Pinia pour gérer les données des articles
+- / Créer un jeu de données d'articles factices pour le développement
 
 ### Développement de la Carte d'Articles
 
