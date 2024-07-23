@@ -1,0 +1,59 @@
+{
+    "articles": [
+      {
+        "id": 1,
+        "title": "Rêves lucides : Quand votre subconscient devient meilleur réalisateur que vous",
+        "summary": "Découvrez pourquoi votre cerveau endormi mérite un Oscar que vous n'aurez jamais.",
+        "content": "Vous pensiez être créatif ? Attendez de voir ce que votre esprit concocte pendant que vous bavez sur votre oreiller. Dans l'univers de Satoshi Kon, particulièrement dans 'Paprika', les rêves sont si vivides qu'ils font passer vos stories Instagram pour des œuvres de maternelle. Imaginez pouvoir enfin donner vie à ce rêve récurrent où vous êtes poursuivi par une chips géante sur un monocycle... Kon l'a fait, et il n'avait même pas besoin de Photoshop !",
+        "date": "2024-07-15",
+        "category": "Psychédélisme pour les nuls",
+        "tags": ["rêves bizarres", "Paprika", "pourquoi je ne dors plus"],
+        "coordinates": { "x": 100, "y": 150 },
+        "image": "https://example.com/images/giant-chip-chasing-dreamer.gif"
+      },
+      {
+        "id": 2,
+        "title": "'Perfect Blue' : Le guide ultime pour devenir une idol et perdre la boule avec style",
+        "summary": "Leçons de vie tirées de 'Perfect Blue' : comment passer de la célébrité à la folie en 81 minutes chrono.",
+        "content": "Vous rêvez de devenir une idol ? 'Perfect Blue' vous montre comment faire... et pourquoi c'est une très, très mauvaise idée. Suivez le parcours de Mima, qui passe de chanteuse pop à actrice, puis à... euh... on n'est pas vraiment sûrs, mais ça implique beaucoup de miroirs et de regards vides. Bonus : apprenez à douter de votre propre existence en trois étapes faciles !",
+        "date": "2024-07-10",
+        "category": "Guide de survie pour célébrités en herbe",
+        "tags": ["comment ne pas finir comme Mima", "miroirs, vos nouveaux ennemis", "pop idol blues"],
+        "coordinates": { "x": 250, "y": 200 },
+        "links": ["https://example.com/how-to-not-become-a-jpop-idol"]
+      },
+      {
+        "id": 3,
+        "title": "La technologie de 'Paprika' : Bientôt dans vos rêves, que vous le vouliez ou non !",
+        "summary": "Préparez-vous à l'invasion de vos songes par la tech. Bonus : guide de survie contre les publicités subliminales nocturnes.",
+        "content": "Grâce aux avancées inspirées par 'Paprika', vos rêves seront bientôt aussi envahis de pubs que votre fil d'actualité Facebook. Imaginez vous réveiller avec une envie irrépressible d'acheter ce nouveau gadget dont vous avez 'rêvé'. Coïncidence ? On ne croit pas. Les chercheurs promettent que cette technologie aidera à comprendre le cerveau, mais on soupçonne qu'ils veulent juste trouver un moyen de nous faire acheter plus de merch d'anime pendant notre sommeil.",
+        "date": "2024-07-05",
+        "category": "Conspirations du futur",
+        "tags": ["mon oreiller m'espionne", "rêves commandités", "Paprika était un avertissement"],
+        "coordinates": { "x": 400, "y": 100 },
+        "image": "https://example.com/images/dream-advertising-nightmare.jpg"
+      },
+      {
+        "id": 4,
+        "title": "'Millennium Actress' ou comment faire un marathon de l'histoire du Japon sans quitter votre canapé",
+        "summary": "Le seul film où vous pouvez traverser mille ans d'histoire en pyjama, pop-corn à la main.",
+        "content": "Qui a besoin de voyager dans le temps quand on a 'Millennium Actress' ? Suivez Chiyoko dans sa course à travers les époques, où elle change de costume plus vite que vous ne changez de chaîne. C'est comme si 'Forrest Gump' rencontrait 'Retour vers le futur', mais en version japonaise et avec 100% plus de ninjas. Bonus : apprenez à courir de manière dramatique à travers les siècles sans vous essouffler !",
+        "date": "2024-06-30",
+        "category": "Fitness temporel",
+        "tags": ["cardio à travers les âges", "le cosplay ultime", "pourquoi courir autant ?"],
+        "coordinates": { "x": 150, "y": 300 },
+        "links": ["https://example.com/how-to-run-through-centuries"]
+      },
+      {
+        "id": 5,
+        "title": "Tokyo Godfathers : Le guide non-officiel pour un Noël non conventionnel",
+        "summary": "Découvrez comment trois sans-abris font un meilleur boulot de babysitting que la plupart des parents.",
+        "content": "Oubliez les chants de Noël ennuyeux et les repas de famille gênants. 'Tokyo Godfathers' nous montre que tout ce dont vous avez besoin pour un Noël mémorable, c'est un bébé abandonné, un trio de sans-abris et une bonne dose de coïncidences improbables. C'est comme 'Trois hommes et un couffin', mais avec 200% plus de neige, de yakuzas et de miracles de Noël. Vous pensiez que votre famille était dysfonctionnelle ? Attendez de rencontrer ce trio !",
+        "date": "2024-06-25",
+        "category": "Guides de survie pour les fêtes",
+        "tags": ["Noël version chaos", "famille choisie", "bébé surprise"],
+        "coordinates": { "x": 300, "y": 250 },
+        "image": "https://example.com/images/tokyo-godfathers-christmas-chaos.jpg"
+      }
+    ]
+  }

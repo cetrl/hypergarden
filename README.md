@@ -34,7 +34,7 @@ npm run dev
 / Installer et configurer D3.js
 / Créer le composant ArticleMap.vue de base
 / store Pinia pour gérer les données des articles
-- Créer un jeu de données d'articles factices pour le développement
+/ Créer un jeu de données d'articles factices pour le développement
 
 ## J-2 : Développement de la Carte d'Articles
 
