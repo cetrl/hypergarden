@@ -1,3 +1,3 @@
 <template>
-    <h1>SearchBar</h1>
+    <input id="searchbar" type="text" placeholder="Search...">
 </template>

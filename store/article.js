@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import articlesData from '@/assets/articles.json'
 
+// adapter pour faire un fetch articles.json
 export const useArticlesStore = defineStore('articles', {
   state: () => ({
     articles: articlesData.articles

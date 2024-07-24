@@ -1,23 +1,86 @@
-.article-preview {
-  font-size: 1.5em;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Fira Mono', monospace;
+  background: linear-gradient(0deg, rgba(165,0,255,1) 0%, rgba(10,9,121,1) 37%, rgba(2,0,36,1) 100%); 
+  color: azure;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header div{
+  display: inline-flex;
+  align-items: center;
+  width: 95vw;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+h1{
+  font-weight: 400;
+}
+
+a{
+  color: azure;
+  text-decoration: none;
+}
+
+a:hover{color: crimson;}
+
+button{
+  background: transparent;
+  border: 1px solid azure;
+  margin: 10px;
+}
+
+#searchbar {
+  margin-left: 20px;
+  background: transparent;
+  border: 1px solid azure;
+  width: 30vw;
+  height: 2em;
+}
+
+#article-map{
+  margin: 20px;
+}
+
+.article-display {
     position: absolute;
     max-width: 500px;
     top: 20px;
     right: 20px;
-    background: white;
-    border: 1px solid #ccc;
+    border: 2px solid crimson;
     padding: 10px;
     border-radius: 5px;
     height: 90vh;
     overflow:scroll;
   }
   
-.article-preview img {
+.article-display img {
     height: auto;
     width: 100%;
     right: 0;
   }
 
+.article-point {
+  r: 20px;
+  fill: crimson;
+  cursor: pointer;
+}
+
 .summary {
   font-style: italic;
+}
+
+.article-title {
+  fill: steelblue;
+  max-width: 20px;
+  cursor: pointer;
+  transition: font-size 0.2s, fill 0.2s;
+}
+
+.article-title:hover {
+  font-size: 14px;
+  fill: darkblue;
 }

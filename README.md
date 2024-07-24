@@ -37,7 +37,8 @@ npm run dev
 - / Créer un jeu de données d'articles factices pour le développement
 
 ### Développement de la Carte d'Articles
-
+- / composant ArticlePreview
+- liste pour l'access
 - Développer la logique de base pour afficher les articles sur la carte
 - Implémenter les contrôles de zoom et de déplacement
 - Créer le composant ArticleNode.vue pour représenter chaque article
