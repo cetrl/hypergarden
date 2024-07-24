@@ -24,27 +24,37 @@ export default {
     this.createMap();
   },
   methods: {
-    createMap() {
-      const svg = d3
-        .select("#article-map")
-        .append("svg")
-        .attr("width", "60vw")
-        .attr("height", "70vh");
+  createMap() {
+    const width = 70 * window.innerWidth / 100;  // 60vw en pixels
+    const height = 70 * window.innerHeight / 100;  // 70vh en pixels
+    const margin = 90;  // marge pour éviter que le texte ne touche les bords
 
-      const articleGroups = svg
-        .selectAll("g")
-        .data(this.articlesStore.articles)
-        .enter()
-        .append("g")
-        .on("click", (event, d) => this.showArticlePreview(d));
+    const svg = d3
+      .select("#article-map")
+      .append("svg")
+      .attr("class", "article-map-svg");
 
-      articleGroups
-        .append("text")
-        .text((d) => d.title)
-        .attr("text-anchor", "middle")
-        .attr("dominant-baseline", "middle")
-        .attr("class", "article-title");
-    },
+    const articleGroups = svg
+      .selectAll("g")
+      .data(this.articlesStore.articles)
+      .enter()
+      .append("g")
+      .attr("class", "article-group")
+      .attr("transform", () => {
+        const x = margin + Math.random() * (width - 2 * margin);
+        const y = margin + Math.random() * (height - 2 * margin);
+        return `translate(${x}, ${y})`;
+      })
+      .on("click", (event, d) => this.showArticlePreview(d));
+
+    articleGroups
+      .append("text")
+      .text((d) => d.title)
+      .attr("class", "article-title")
+      .attr("text-anchor", "middle")
+      .attr("dominant-baseline", "middle")
+  },
+  // ... autres méthodes
     showArticlePreview(article) {
       this.selectedArticle = article;
     },

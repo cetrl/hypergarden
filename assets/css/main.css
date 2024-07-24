@@ -35,8 +35,8 @@ button{
 
 #searchbar {
   margin-left: 20px;
-  background: transparent;
-  border: 1px solid azure;
+  background: black;
+  border: none;
   width: 30vw;
   height: 2em;
 }
@@ -45,42 +45,48 @@ button{
   margin: 20px;
 }
 
-.article-display {
+.article-preview {
+    background-color: rgba(0, 0, 0, 0.2);  
     position: absolute;
     max-width: 500px;
-    top: 20px;
+    top: 10vh;
     right: 20px;
-    border: 2px solid crimson;
-    padding: 10px;
-    border-radius: 5px;
-    height: 90vh;
-    overflow:scroll;
+    border: 1px solid crimson;
+    padding: 20px;
+    height: 80vh;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   }
   
-.article-display img {
+.article-preview img {
     height: auto;
     width: 100%;
     right: 0;
   }
 
-.article-point {
-  r: 20px;
-  fill: crimson;
-  cursor: pointer;
-}
-
 .summary {
   font-style: italic;
 }
 
-.article-title {
-  fill: steelblue;
-  max-width: 20px;
+.article-map-svg {
+  width: 95vw;
+  height: 75vh;
+  
+}
+
+.article-group {
   cursor: pointer;
+  height: 10px;
+
+}
+
+.article-title {
+  fill: white;
   transition: font-size 0.2s, fill 0.2s;
 }
 
 .article-title:hover {
-  font-size: 14px;
-  fill: darkblue;
+  font-size: 1.1em;
+  fill: crimson;
 }
+
