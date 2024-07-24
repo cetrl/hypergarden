@@ -1,6 +1,5 @@
 <template>
     <div v-if="article" class="article-preview">
-      <button>x</button>
       <h3>{{ article.title }}</h3>
       <img v-if="article.image" :src="article.image" :alt="article.title" />
       <p class="summary">{{ article.summary }}</p>

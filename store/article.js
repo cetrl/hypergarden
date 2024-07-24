@@ -1,30 +1,32 @@
 import { defineStore } from 'pinia'
-import articlesData from '@/assets/articles.json'
 
-async function getData() {
-  const url = "@/assets/articles.json";
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
+export const useArticlesStore = () =>{
+  const innerStore = defineStore("articles", {
+    state: () => ({
+      articles: [],
+    }),
 
-    const json = await response.json();
-    console.log(json);
-  } catch (error) {
-    console.error(error.message);
+    getters: {
+      reactiveData() {
+        return this.articles;
+      },
+    },
+    
+    actions: {
+      async fetchData() {
+
+      const url = "_nuxt/assets/articles.json";
+        return fetch(url).then(res => res.json()).then((result) => {
+          this.articles = result.articles;
+        });
+      },
+    },
+  });
+  
+  const store = innerStore();
+  
+  if (store.articles.length === 0) {
+    store.fetchData();
   }
-}
-
-export const useArticlesStore = defineStore('articles', {
-  state: () => ({
-    articles: articlesData.articles
-  }),
-  getters: {
-    getArticleById: (state) => (id) => state.articles.find(article => article.id === id),
-    getFilteredArticles: (state) => (category) => state.articles.filter(article => article.category === category)
-  },
-  actions: {
-  }
-})
-
+  return store;
+};
