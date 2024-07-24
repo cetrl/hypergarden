@@ -25,12 +25,21 @@ a{
   text-decoration: none;
 }
 
-a:hover{color: crimson;}
-
 button{
-  background: transparent;
-  border: 1px solid azure;
+  background: rgba(165,0,255,0.5);
+  border: 1px solid rgba(240, 255, 255, 0.5);
   margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  color: azure;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(101%);
+  border: 1px solid rgba(240, 255, 255, 1);
+
 }
 
 #searchbar {
@@ -46,12 +55,14 @@ button{
 }
 
 .article-preview {
-    background-color: rgba(0, 0, 0, 0.2);  
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
     position: absolute;
     max-width: 500px;
     top: 10vh;
     right: 20px;
     border: 1px solid crimson;
+    border-radius: 10px;
     padding: 20px;
     height: 80vh;
     overflow: hidden;
@@ -90,3 +101,7 @@ button{
   fill: crimson;
 }
 
+#article-list li {
+  list-style: circle;
+  margin-bottom: 1.2em;
+}

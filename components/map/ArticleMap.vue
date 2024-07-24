@@ -7,8 +7,8 @@
 
 <script>
 import { ref } from "vue";
-import { useArticlesStore } from "../store/article.js";
 import * as d3 from "d3";
+import { useArticlesStore } from "../store/article.js";
 import ArticlePreview from '../ui/ArticlePreview.vue';
 
 export default {
@@ -54,7 +54,7 @@ export default {
       .attr("text-anchor", "middle")
       .attr("dominant-baseline", "middle")
   },
-  // ... autres méthodes
+
     showArticlePreview(article) {
       this.selectedArticle = article;
     },

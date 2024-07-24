@@ -1,7 +1,21 @@
 import { defineStore } from 'pinia'
 import articlesData from '@/assets/articles.json'
 
-// adapter pour faire un fetch articles.json
+async function getData() {
+  const url = "@/assets/articles.json";
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const json = await response.json();
+    console.log(json);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
 export const useArticlesStore = defineStore('articles', {
   state: () => ({
     articles: articlesData.articles
@@ -11,6 +25,6 @@ export const useArticlesStore = defineStore('articles', {
     getFilteredArticles: (state) => (category) => state.articles.filter(article => article.category === category)
   },
   actions: {
-    // Vous pouvez ajouter des actions ici si nécessaire
   }
 })
+
