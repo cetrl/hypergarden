@@ -40,6 +40,8 @@ branch ui
 - / delete searchbar
 
 ## back
+- install content.nuxt
+- install nuxt.studio
 branch back v1 supabase: utilisation bdd pas adapté au blog, go content.nuxt et nuxt.studio
 - config store pinia
 - / config db

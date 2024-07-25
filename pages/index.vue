@@ -17,9 +17,6 @@ const toggleView = () => {
 <template>
   <div>
     <div>
-      <button @click="toggleView">
-        {{ currentView === "map" ? "List" : "Map" }} View
-      </button>
     </div>
     <div v-if="currentView === 'map'">
       <ArticleMap />
@@ -27,5 +24,8 @@ const toggleView = () => {
     <div v-else>
       <ListView />
     </div>
+    <button @click="toggleView">
+      {{ currentView === "map" ? "List" : "Map" }} View
+    </button>
   </div>
 </template>

@@ -25,9 +25,16 @@ a{
   text-decoration: none;
 }
 
+footer {
+  text-align: center;
+  margin: 20px;
+  bottom: 0;
+}
+
 button{
-  background: rgba(165,0,255,0.5);
-  border: 1px solid rgba(240, 255, 255, 0.5);
+  font-size: 1.2em;
+  background: transparent;
+  border: 2px solid azure;
   margin: 10px;
   padding: 5px;
   border-radius: 10px;
@@ -38,7 +45,8 @@ button{
 button:hover{
   cursor: pointer;
   transform: scale(101%);
-  border: 1px solid rgba(240, 255, 255, 1);
+  color: blueviolet;
+  border: 2px solid blueviolet;
 
 }
 
@@ -61,7 +69,7 @@ button:hover{
     max-width: 500px;
     top: 10vh;
     right: 20px;
-    border: 1px solid crimson;
+    border: 1px solid blueviolet;
     border-radius: 10px;
     padding: 20px;
     height: 80vh;
@@ -98,7 +106,7 @@ button:hover{
 
 .article-title:hover {
   font-size: 1.1em;
-  fill: crimson;
+  fill: blueviolet;
 }
 
 #article-list li {
