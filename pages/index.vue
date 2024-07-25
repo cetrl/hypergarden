@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import ArticleMap from "~/components/map/ArticleMap";
-import SearchBar from "~/components/ui/SearchBar";
-import ListView from "~/components/ui/ListView";
+import ArticleMap from "~/components/map/ArticleMap.vue";
+import ListView from "~/components/ui/ListView.vue";
 
 definePageMeta({
   layout: "default",
@@ -18,7 +17,6 @@ const toggleView = () => {
 <template>
   <div>
     <div>
-      <SearchBar />
       <button @click="toggleView">
         {{ currentView === "map" ? "List" : "Map" }} View
       </button>

@@ -32,12 +32,12 @@ npm run dev
 branch ui
 - map view affichée dès le départ
 - ~ affichage de base (https://observablehq.com/@d3/radial-tree/2?intent=fork ?)
-- delete searchbar
 - contrôles de zoom et de déplacement
 - node component ?
 - ArticleNode.vue pour représenter chaque article
 - clic pour ouvrir l'article, survol pour plus d'infos
 - responsive
+- / delete searchbar
 
 ## back
 branch back v1 supabase: utilisation bdd pas adapté au blog, go content.nuxt et nuxt.studio
