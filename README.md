@@ -10,12 +10,13 @@ Hypergarden is a blog platform built with Nuxt.js, offering a browsing experienc
 - Dynamic search and filtering
 - Responsive design
 
-## Technologies
+## Technos
 
 - Nuxt.js
 - Vue.js
-- D3.js -> https://d3js.org/getting-started
-- Pinia -> https://pinia.vuejs.org/
+- D3.js
+- Pinia
+- Supabase
 
 ## Installation
 
@@ -26,18 +27,24 @@ npm install
 npm run dev
 ```
 ## To-do
-- config store pinia
-- / fetch
-- / liste pour l'access
 
 ### Design map D3
-- nouvelle branche
+branch ui
+- map view affichée dès le départ
 - ~ affichage de base (https://observablehq.com/@d3/radial-tree/2?intent=fork ?)
+- delete searchbar
 - contrôles de zoom et de déplacement
 - node component ?
 - ArticleNode.vue pour représenter chaque article
 - clic pour ouvrir l'article, survol pour plus d'infos
 - responsive
+
+## back
+branch back v1 supabase: utilisation bdd pas adapté au blog, go content.nuxt et nuxt.studio
+- config store pinia
+- / config db
+- / appel db au lieu du json
+- gestion authentification
 
 ### Finalisation et Optimisation
 - searchbar
@@ -45,3 +52,10 @@ npm run dev
 - Optimiser les performances (chargement progressif, rendu efficace)
 - Finaliser le design responsive
 - Tester l'ensemble de l'application sur différents appareils
+
+## Docs
+- DB https://supabase.com/ supabase.nuxtjs.org/
+- blog https://content.nuxt.com/
+- cms https://nuxt.studio/
+- d3 https://d3js.org/getting-started
+- pinia https://pinia.vuejs.org/
